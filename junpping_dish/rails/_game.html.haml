@@ -1,0 +1,17 @@
+
+= javascript_include_tag "game/gmain.js"
+
+
+//= stylesheet_link_tag 'game/gamefont'
+-# preInclude = ['p5.min.js']
+-# Dir.foreach(File.join(Rails.root, 'vendor', 'assets', 'javascripts', 'game')) do |file|
+  -# next if file != preInclude[0]
+  -# # do work on real items
+  -#= javascript_include_tag "game/#{file}"
+
+-# Dir.foreach(File.join(Rails.root, 'vendor', 'assets', 'javascripts', 'game')) do |file|
+  -# next if file == '.' or file == '..' or file == preInclude[0]
+  -# # do work on real items
+  -#= javascript_include_tag "game/#{file}"
+
+.gameCanvas{:id => "gameCanvas"}
